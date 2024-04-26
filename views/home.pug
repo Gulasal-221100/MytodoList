@@ -1,0 +1,24 @@
+extends layout.pug
+
+block list-box
+    if error 
+        p.warning Please add task 
+    if deleted 
+        p.warning Deleted
+    form.form(action='add' method="POST")
+        input.task(type='text' placeholder='Add your task here', name='todo')
+        button.btn Add
+        
+    div.todos
+        if todos.length
+            each todo in todos
+                p.todo 
+                    if todo.done
+                        a.btnUpdate(href=`/${ todo.id }/update`) #{ todo.description }
+                    else
+                        a.noUpdate(href=`/${ todo.id }/update`) #{ todo.description }
+                    a.delete(href=`/${ todo.id }/delete`) Delete
+        else
+            p.todo No any tasks available
+    div.warning-message
+        p This web application was created to fulfill Web Technology module’s requirements and does not represent an actual company or service. 

@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #fda403;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    height: 80vh;
+}
+
+.logo {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.todos {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    flex-direction: column;
+}
+
+.todo {
+    background-color: #e8751a;
+    padding: 0.4rem;
+    width: 100%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.task {
+    display: inline-block;
+    padding: 1rem;
+    width: 930px;
+}
+
+.todo:hover {
+    background-color: #416d19;
+}
+.btn {
+    width: 200px;
+    padding: 0.8rem 2rem 0.8rem 2rem;
+    background-color: #9bcf53;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.warning {
+    padding-left: 2rem;
+    color: red;
+    font-style: italic;
+}
+
+.delete {
+    background-color: red;
+    text-decoration: none;
+    padding: 1rem 0rem;
+    width: 80px;
+    text-align: center;
+    border: #fff 1px solid;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.delete:hover {
+    background-color: white;
+    color: black;
+}
+
+.btnUpdate {
+    color: greenyellow;
+    text-decoration: line-through;
+}
+.noUpdate {
+    color: #fff;
+    text-decoration: none;
+}
+
+.warning-message {
+    font-style: italic;
+    font-size: 1.4rem;
+    padding-left: 2rem;
+    margin-top: 5rem;
+}
